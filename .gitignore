@@ -1,0 +1,6 @@
+static/*
+.DS_Store
+*.pyc
+*.log
+!requirements.txt
+local_settings.py
