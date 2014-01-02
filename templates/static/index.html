@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+	<link href='/media/css/landing.css' rel='stylesheet' type='text/css'/>
+	
+	<div class="main_statement action_redirect" data-url="{% url 'projects' %}">
+		<img src="/media/images/telegraphandmain-logo-white.png"/>
+	</div>
+	
+	{% include "misc/telegraphandmain-js.html" %}
+{% endblock %}

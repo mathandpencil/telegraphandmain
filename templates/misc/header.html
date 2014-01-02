@@ -1,0 +1,51 @@
+<div class="container header">
+	<header class="clearfix">
+		<table>
+			<tr>
+				<td>
+					<h2 class="action_redirect" data-url="/">Telegraph &amp; Main</h2>
+					<h1 class="action_redirect" data-url="/">Medina. NY. USA.</h1>
+				</td>
+				
+				<td class="standard">
+					<nav>
+						{% if secondary == 'project_detail'%}
+							<a href="{% url 'projects' %}" {% if primary == 'projects'%} class='active' {% endif %}>Return to Projects</a>
+						
+						{% else %}
+							<a href="{% url 'projects' %}" {% if primary == 'projects'%} class='active' {% endif %}>Projects</a>
+						{% endif %}
+						
+						<a href="{% url 'about' %}" {% if primary == 'about'%} class='active' {% endif %}>About</a>
+						
+						<a href="{% url 'team' %}" {% if primary == 'team'%} class='active' {% endif %}>Team</a>
+					</nav>
+				</td>
+				
+				<td class="mobile">
+					<nav class="mobile">
+						<a class="icons icon-menu" id="showRightPush"></a>
+					</nav>
+				</td>
+			</tr>
+		</table>
+	</header>
+	
+	<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+		<h3 id="hideMenu">
+			<span class="icon-close"></span>
+		</h3>
+		
+		<a href="{% url 'about' %}" {% if primary == 'about'%} class='active' {% endif %}>
+			About
+		</a>
+		
+		<a href="{% url 'projects' %}" {% if primary == 'projects'%} class='active' {% endif %}>
+			Projects
+		</a>
+		
+		<a href="{% url 'team' %}" {% if primary == 'team'%} class='active' {% endif %}>
+			Team
+		</a>
+	</div>
+</div>

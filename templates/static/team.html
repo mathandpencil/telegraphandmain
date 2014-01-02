@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title%} Math &amp; Pencil - About {% endblock %}
+
+{% block header %}
+	{% include "misc/header.html" with primary="team" %}
+{% endblock %}
+
+{% block content %}
+	<style>
+		html {
+			height:;
+		}
+		
+		body {
+			background:url(/media/images/bkg-team.jpg) no-repeat center center;
+			border:0.25em solid #fff;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+		}
+		.container.header {
+			border:0;
+		}
+		
+		.container > header > span,
+		.container > header nav a {
+			color:#fff;
+		}
+	</style>
+	
+	<div class="main-content">
+		<table class="tbl_content_header">
+			<tr>
+				<td>
+					<h1 class="alt">Team</h1>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="content">
+			<ul class="lst_team">
+				<li>
+					<span class="txt">Robert Sanderson</span>
+					<p>Bob is majority owner of <a href="http://www.candlelightcab.com" target="_blank">Candlelight Cabinetry</a> in Lockport, NY (He also started <a href="http://www.kitchenworldinc.com" target="_blank">Kitchen World</a> which is his son Randy now owns and operates). Bob has extensive entrepreneurial experience; from cornering the hot chocolate market in Medina when he was 8 years old to creating one of the countries highest quality cabinetry lines, he has an experts understanding of business startup and development. He was born and raised in Medina and has been a cornerstone in the business and social community for years.</p>
+				</li>
+			</ul>
+			
+			<ul class="lst_team">
+				<li>
+					<span class="txt">Tim Hungerford</span>
+					<p>Tim is the Chief Design Officer at <a href="http://www.socialq.com" target="_blank">SocialQ</a>, <a href="http://www.employii.com" target="_blank">Employii</a> and <a href="http://www.dukemail.com" target="_blank">Dukemail</a> as well as a co-owner of <a href="http://www.candlelightcab.com" target="_blank">Math &amp; Pencil</a>. He's been working the startup world for several years now and was also born and raised in Medina. He has lived all across the country and traveled extensively throughout the world working on various farms, climbing, surfing, drinking wine and enjoying the vast arrays of cultural traditions and architecture.</p>
+				</li>
+			</ul>
+			
+			<ul class="lst_team">
+				<li>
+					<span class="txt">NHA Architecture Firm</span>
+					<p>Based in Chicago, IL with roots also in Medina <a href="http://www.n-ha.com/" target="_blank">Neidhardt Hungerford Architects</a> have extensive architectural experience both with new design and construction and historical redevelopment. It's also helpful that the owners are family.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	{% include "misc/telegraphandmain-js.html" %}
+{% endblock %}

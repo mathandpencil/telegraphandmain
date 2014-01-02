@@ -1,0 +1,162 @@
+.scroll-effect {
+	border:1px solid #f0f0f0;
+	border-top:0;
+	position:relative;
+	overflow: hidden;
+}
+
+.scroll-effect section {
+	border-bottom:1px solid #f0f0f0;
+}
+
+.scroll-effect section:nth-child(1) {
+	border-top:1px solid #f0f0f0;
+}
+
+.scroll-effect section:last-child {
+	border-bottom:0;
+}
+
+/* Clear floats of children */
+.scroll-effect .scroll-section:before,
+.scroll-effect .scroll-section:after {
+	content: " ";
+	display: table;
+}
+
+.scroll-effect .scroll-section:after {
+	clear: both;
+}
+
+/* Text styling */
+.scroll-effect .scroll-section h2 {
+	font-family:"Cutive Mono";
+	font-size: 2em;
+	font-weight: 100;
+	line-height: 1;
+}
+
+.scroll-effect .scroll-section p {
+	color:#202020;
+	font-family:"Lato", sans-serif;
+	font-size: 1.15em;
+	font-weight: 300;
+	padding:1.25em 0 1em 0;
+	text-align:justify;
+}
+
+.scroll-effect .scroll-section p span {
+	font-weight:500;
+}
+
+/* Sides */
+.scroll-effect article,
+.scroll-effect figure {
+	float: left;
+	margin: 0;
+	min-height: 12em;
+	overflow: hidden;
+	width: 50%;
+	
+	-webkit-transition:	-webkit-transform 0.5s,	opacity 0.5s;
+	-moz-transition:	-moz-transform 0.5s,	opacity 0.5s;
+	transition:			transform 0.5s,			opacity 0.5s;
+}
+
+/* Clear floats of children */
+.scroll-effect article:before,
+.scroll-effect article:after {
+	content: " ";
+	display: table;
+}
+
+.scroll-effect article:after {
+	clear: both;
+}
+
+.scroll-effect section article {
+	padding:3em;
+}
+
+.scroll-effect section figure.right {
+	border-left:1px solid #f0f0f0;
+	height:500px;
+}
+
+.scroll-effect section figure.left {
+	border-right:1px solid #f0f0f0;
+	height:500px;
+}
+
+.scroll-effect section figure:hover {
+	cursor:pointer;
+}
+
+/* Initial state (hidden or anything else) */
+.scroll-init article,
+.scroll-init figure {
+	opacity: 0;
+}
+
+.scroll-init .left {
+	-webkit-transform:	translateX(-380px);
+	-moz-transform:		translateX(-380px);
+	transform:			translateX(-380px);
+}
+
+.scroll-init .right {
+	-webkit-transform:	translateX(380px);
+	-moz-transform:		translateX(380px);
+	transform:			translateX(380px);
+}
+
+/* Animated state */
+.scroll-section.scroll-animate .left,
+.scroll-section.scroll-animate .right {
+	opacity: 1;
+	
+	-webkit-transform:	translateX(0px);
+	-moz-transform:		translateX(0px);
+	transform:			translateX(0px);
+}
+
+section.border-none {
+	border:none;
+	margin:0;
+	padding-bottom:1em;
+	padding-top:1em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 74em) {
+	.scroll-section h2 {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 41.6em) {
+	.scroll-effect {
+		border:0;
+	}
+	.scroll-effect section {
+		border-bottom:0;
+	}
+
+	.scroll-effect section:nth-child(1) {
+		border-top:0;
+	}
+	
+	.scroll-effect article,
+	.scroll-effect figure {
+		border:3px solid #fff;
+		border-bottom:0;
+		float: none;
+		width: 100%;
+	}
+	
+	.scroll-effect section:last-child figure {
+		border-bottom:3px solid #fff;
+	}
+}

@@ -1,0 +1,35 @@
+{% load jammit_tags %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>
+			{% block title %}
+				Telegraph &amp; Main - Historical Architecture Redevelopment based in Medina, New York - Western New York Historical Buildings - Historical Buildings Medina New York
+			{% endblock %}
+		</title>
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="description" content="Telegraph and Main is an architectural restoration company focusing on restoring historically relevant structures within Western New York. Based in Medina, NY the company is looking to help spur revitalization of the once booming Erie Canal town by restoring multiple historical properties within downtown Medina. Please support and help save Bent's Hall and all of Medina New York Historical Architecture" />
+		
+		<meta name="keywords" content="Telegraph and Main, Telegraph &amp; Main, Telegraph and Main Medina New York, Telegraph and Main Historical Redevelopment, Historical Building Redevelopment Western New York, Historical Architecture Western New York, Historical Architecture Medina New York, Historical Medina New York, Erie Canal Architecture, Historic Erie Canal Medina New York, Bents Hall Medina New York." />
+		
+		{% include_stylesheets "common" %}
+		{% include_javascripts "common" %}
+		{% include "misc/javascript.html" %}
+		
+		<link rel="shortcut icon" href="/media/images/favicon.ico"/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body class="cbp-spmenu-push">
+		{% block header %} 
+		{% endblock %}
+		
+		{% block content %} {% endblock %}
+	</body>
+</html>

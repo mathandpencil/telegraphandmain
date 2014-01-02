@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %} Math &amp; Pencil - Contact {% endblock %}
+
+{% block header %}
+	{% include "misc/header.html" with primary="contact" %}
+{% endblock %}
+
+{% block content %}
+	<style>
+		html {
+			border:0.25em solid #fff;
+			height:100%;
+		}
+		
+		body {
+			background:url(/media/images/bkg-contact.jpg) no-repeat center center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+		}
+		.container.header {
+			border:0;
+		}
+		
+		
+		.container > header > span,
+		.container > header nav a {
+			color:#fff;
+		}
+		
+		form {
+			margin:1em 0 0.25em 0;
+			padding:0;
+		}
+		
+		form input {
+			margin-bottom:1.05em;
+		}
+	</style>
+	
+	<div class="main-content">
+		<table class="tbl_content_header">
+			<tr>
+				<td>
+					<h1 class="contact">Contact</h1>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="content">
+			<p></p>
+		</div>
+	</div>
+	
+	
+	{% include "misc/telegraphandmain-js.html" %}
+{% endblock %}

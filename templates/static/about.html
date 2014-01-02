@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title%} Math &amp; Pencil - About {% endblock %}
+
+{% block header %}
+	{% include "misc/header.html" with primary="about" %}
+{% endblock %}
+
+{% block content %}
+	<style>
+		html {
+			border:4px solid #fff;
+			height:100%;
+		}
+		
+		body {
+			background:url(/media/images/bkg-about.jpg) no-repeat center center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+		}
+		.container.header {
+			border:0;
+		}
+		
+		
+		.container > header > span,
+		.container > header nav a {
+			color:#fff;
+		}
+	</style>
+	
+	<div class="main-content">
+		<table class="tbl_content_header">
+			<tr>
+				<td>
+					<h1>About</h1>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="content">
+			<p><span>Telegraph &amp; Main</span> is an architectural restoration company focusing on historically relevant structures within Western New York. Based in Medina, NY the company is looking to help the ongoing revitalization of the once booming Erie Canal town by restoring historical properties within downtown Medina.</p>
+			
+			<button class="action_redirect" type="button" data-url="{% url 'contact' %}">
+				Contact <span class="txt">Telegraph &amp; Main</span>
+			</button>
+			<br/>
+			
+			<button class="action_redirect" type="button" data-url="http://www.eggstreet.org/bentshall.php">
+				Help Save <span class="txt">Bent's Hall</span>
+			</button>
+		</div>
+	</div>
+	
+	{% include "misc/telegraphandmain-js.html" %}
+{% endblock %}

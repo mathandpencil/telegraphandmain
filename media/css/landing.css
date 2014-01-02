@@ -1,0 +1,49 @@
+html {
+	height:100%;
+}
+
+body {
+/*	background:#010101;*/
+	background:url(/media/images/bkg-main-standard.jpg) no-repeat center center;
+	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+}
+
+.container.header {
+	border:0;
+}
+
+.main_statement {
+	cursor:pointer;
+	width:100%;
+}
+
+.main_statement img {
+	display:block;
+	height:400px;
+	margin:2em auto 0 auto;
+	width:auto;
+}
+
+/* MEDIA SCREEN IF STATEMENTS */
+@media screen and (max-width: 62.75em) {
+	body {
+		background:url(/media/images/bkg-main-standard.jpg) no-repeat center center;
+		-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+		font-size:80%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	body {
+		background:url(/media/images/bkg-main-iphone.jpg) no-repeat center center;
+		-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+	}
+}
+
+@media screen and (max-width: 41.6em) { 
+	body {
+		background:url(/media/images/bkg-main-iphone.jpg) no-repeat center center;
+		-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+		font-size:70%;
+	}
+}

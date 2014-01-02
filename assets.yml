@@ -31,18 +31,22 @@ javascripts:
         - media/js/vendor/d3.v2.min.js
         - media/js/vendor/modernizr.js
         - media/js/vendor/slide_menu.js
+        - media/js/vendor/jquery.validate.js
+        - media/js/vendor/fileuploader.js
+        - media/js/vendor/ajax.manager.js
+        - media/js/app.js
+        
  
 stylesheets:
     
     common:
         - media/css/reset.css
+        - media/css/icons.css
         - media/css/default.css
         - media/css/header.css
-        - media/css/blog.css
         - media/css/buttons.css
         - media/css/grid.css
         - media/css/grid_items.css
         - media/css/forms.css
-        - media/css/icons.css
         - media/css/pagination.css
         - media/css/slide_menu.css

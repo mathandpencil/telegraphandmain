@@ -1,0 +1,98 @@
+{% load jammit_tags %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>
+			{% block title %}
+				Math &amp; Pencil - 404
+			{% endblock %}
+		</title>
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href='/media/css/reset.css' rel='stylesheet' type='text/css'/>
+		<link href='/media/css/default.css' rel='stylesheet' type='text/css'/>
+		<link href='/media/css/header.css' rel='stylesheet' type='text/css'/>
+		<link href='/media/css/slide_menu.css' rel='stylesheet' type='text/css'/>
+		<link href='/media/css/icons.css' rel='stylesheet' type='text/css'/>
+		<link href='/media/css/buttons.css' rel='stylesheet' type='text/css'/>
+		
+		<link rel="shortcut icon" href="/media/images/favicon.ico"/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+		
+		<style>
+			html {
+				border:0.25em solid #fff;
+				height:100%;
+			}
+
+			body {
+				background:url(/media/images/bkg-404.jpg) no-repeat center center;
+				-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
+			}
+			.container.header {
+				border:0;
+			}
+			
+			.container > header > span,
+			.container > header nav a {
+				color:#fff;
+			}
+			
+			.main-content {
+				width:auto;
+			}
+		</style>
+	</head>
+	
+	<body class="cbp-spmenu-push">
+		<div class="container header">
+			<header class="clearfix">
+				<table>
+					<tr>
+						<td>
+							<h2 onclick="location.href='{% url 'index' %}'">Math &amp; Pencil</h2>
+							<h1 onclick="location.href='{% url 'index' %}'">New York City / Buffalo / USA</h1>
+						</td>
+						
+						<td class="standard">
+							<nav>
+								<a class="icons icon-home" href="{% url 'index' %}"></a>
+							</nav>
+						</td>
+						
+						<td class="mobile">
+							<nav class="mobile">
+								<a class="icons icon-home" href="{% url 'index' %}"></a>
+							</nav>
+						</td>
+					</tr>
+				</table>
+			</header>
+		</div>
+		
+		<div class="main-content">
+			<h1>Woops</h1>
+			
+			<p>Something has gone horribly awry.</p>
+			
+			<button onclick="location.href='{% url 'index' %}'">
+				<div class="icon-arrow-left2"></div> Maybe we should start over
+			</button>
+		</div>
+		
+		<script>
+			function returnFalse(){
+				event.returnValue = false;
+			}
+
+			$('.action_redirect').click(function(e){
+				window.location.href = $(e.currentTarget).data("url");
+			});
+		</script>
+	</body>
+</html>
