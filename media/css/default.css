@@ -69,6 +69,9 @@ a:hover {
 .main-content span.icons {
 	font-family:"icons";
 }
+.main-content span.icons.green {
+	color:#6b9b90;
+}
 .main-content a {
 	color:#6b9b90;
 	font-weight:bold;
