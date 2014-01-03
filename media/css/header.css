@@ -76,6 +76,7 @@
 	font-weight:100;
 	padding:12px 12px 12px 14px;
 	position:relative;
+	right:-15px;
 	top:2px;
 }
 
@@ -109,6 +110,21 @@ td.mobile {
 	body {
 		font-size:80%;
 	}
+}
+
+@media screen and (max-width: 41.6em) { 
+	.container > header table,
+	.container > header table td.mobile {
+		margin:0;
+		padding:0;
+	}
+	.container > header nav a {
+		display:block;
+		padding:0;
+		position:relative;
+		text-align:right;
+		width:40px;
+	}
 	
 	table td.standard {
 		display:none;
@@ -119,14 +135,4 @@ td.mobile {
 		display:block;
 		text-align:right;
 	}
-}
-
-@media screen and (max-width: 41.6em) { 
-	.container > header nav a {
-		display:block;
-		padding-left:0;
-		position:static;
-		text-align:left;
-	}
-	
 }
