@@ -12,7 +12,7 @@ env.BUILD_FOLDER				= "/home/ubuntu/build"
 env.PIP_REQUIREMENTS_PATH		= 'config/requirements.txt'
 env.GUNICORN_PID_PATH			= os.path.join(env.REMOTE_CODEBASE_PATH, 'logs/gunicorn.pid')
 env.PROJECT_PATH				= os.path.dirname(os.path.abspath(__file__))
-env.TELEGRAPHANDMAIN_PATH				= "/home/ubuntu/telegraphandmain/"
+env.TELEGRAPHANDMAIN_PATH		= "/home/ubuntu/telegraphandmain/"
 env.BRANCH_NAME					= 'master'
 env.user						= 'ubuntu'
 
@@ -81,9 +81,10 @@ def make_directories():
 	
 def setup_supervisor():
 	with cd(env.TELEGRAPHANDMAIN_PATH):
-		put('config/supervisor_gunicorn.conf', '/etc/supervisor/conf.d/telegraphandmain.conf', use_sudo=True)
-		sudo('supervisorctl update')
-		sudo('supervisorctl reload')
+		run("ls -alt config/")
+		#put('config/supervisor_gunicorn.conf', '/etc/supervisor/conf.d/telegraphandmain.conf', use_sudo=True)
+		#sudo('supervisorctl update')
+		#sudo('supervisorctl reload')
 	
 def build_all():
 	setup_apt_get()
