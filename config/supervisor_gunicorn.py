@@ -1,5 +1,5 @@
 [program:telegraphandmain]
-command=gunicorn telegraphandmain.wsgi:application --bind 127.0.0.1:8001
+command=gunicorn telegraphandmain.wsgi:application --bind 127.0.0.1:8002
 directory=/home/ubuntu/telegraphandmain/
 user=ubuntu
 stdout_logfile=/var/logs/telegraphandmain_celery_gunicorn.log
