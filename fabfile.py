@@ -28,9 +28,6 @@ env.roledefs = {
 	'production' : ['204.236.234.153'],
 }
 
-def bootstrap():
-	with cd(env.TELEGRAPHANDMAIN_PATH):
-		run("./manage.py bootstrap")
 
 def upgrade_ubuntu():
 	sudo('do-release-upgrade')
