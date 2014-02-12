@@ -1,9 +1,15 @@
 {% extends "base.html" %}
 
 {% block header %}
+	{% include "misc/header.html" with primary="" %}
 {% endblock %}
 
 {% block content %}
+	<style>
+		html {
+			border:0.25em solid #fff;
+		}
+	</style>
 	<link href='/media/css/landing.css' rel='stylesheet' type='text/css'/>
 	
 	<div class="main_statement action_redirect" data-url="{% url 'projects' %}">
