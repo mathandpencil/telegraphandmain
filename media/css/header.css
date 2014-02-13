@@ -82,7 +82,8 @@
 
 .container > header nav a:hover,
 .container > header nav a.active   {
-	color:#6b9b90;
+	background:#6b9b90;
+	color:#fafafa;
 }
 
 .container > header nav a.icons:hover  {
@@ -97,6 +98,8 @@
 nav.mobile,
 td.mobile {
 	display:none;
+	position:relative;
+	top:-4px;
 }
 
 /* MEDIA SCREEN IF STATEMENTS */
