@@ -201,6 +201,26 @@ ul.lst_team li:nth-child(even) {
 
 
 
+/* SCROLL BARS */
+::-webkit-scrollbar {
+	background: rgba(0,0,0,0.0) !important;
+	width: 4px !important;
+}
+::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0);
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: transparent !important;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #202020;
+}
+
+
+
 
 /* MEDIA SCREEN IF STATEMENTS */
 @media screen and (max-width: 62.75em) {
