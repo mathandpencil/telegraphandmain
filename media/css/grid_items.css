@@ -2,31 +2,7 @@
 	background:url(/media/images/bkg-main-standard.jpg) no-repeat top center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
 }
-.cbp-ig-grid.projects li:nth-child(3) {
-	background:url(/media/images/screenshot-employii-detail-3.jpg) no-repeat center center;
-	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
-}
-.cbp-ig-grid.projects li:nth-child(4) {
-	background:url(/media/images/screenshot-dukemail.jpg) no-repeat center center;
-	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
-}
-
-
-.cbp-ig-grid.branding li:nth-child(2) {
-	background:url(/media/images/screenshot-businesscards.jpg) no-repeat center center;
-	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
-}
-.cbp-ig-grid.branding li:nth-child(3) {
-	background:url(/media/images/screenshot-identity.jpg) no-repeat center center;
-	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
-}
-
-
-.cbp-ig-grid.websites li:nth-child(2) {
-	background:url(/media/images/screenshot-elementcycles-detail-1.jpg) no-repeat center center;
-	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
-}
-.cbp-ig-grid.websites li:nth-child(3) {
-	background:url(/media/images/screenshot-teresamisiti-detail-1.jpg) no-repeat center center;
+.cbp-ig-grid.projects li:nth-child(2) {
+	background:url(/media/images/project-2-a.jpg) no-repeat center center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;background-size:cover;
 }
