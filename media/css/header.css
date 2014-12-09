@@ -20,7 +20,7 @@
 }
 
 .container > header h1 {
-	color:#99b0a5;
+	color:#232323;
 	cursor:pointer;
 	font-size: 1em;
 	font-weight: 300;
@@ -82,12 +82,12 @@
 
 .container > header nav a:hover,
 .container > header nav a.active   {
-	background:#6b9b90;
+	background:#232323;
 	color:#fafafa;
 }
 
 .container > header nav a.icons:hover  {
-	background:#6b9b90;
+	background:#232323;
 	color:#fff;
 }
 

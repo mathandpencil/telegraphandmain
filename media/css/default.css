@@ -47,7 +47,7 @@ a:hover {
 }
 
 .main-content h1 {
-	color:#6b9b90;
+	color:#232323;
 	font-family:"Cutive Mono";
 	font-size:1.25em;
 	font-weight:100;
@@ -70,10 +70,10 @@ a:hover {
 	font-family:"icons";
 }
 .main-content span.icons.green {
-	color:#6b9b90;
+	color:#232323;
 }
 .main-content a {
-	color:#6b9b90;
+	color:#232323;
 	font-weight:bold;
 }
 
