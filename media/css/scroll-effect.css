@@ -39,8 +39,9 @@
 .scroll-effect .scroll-section p {
 	color:#202020;
 	font-family:"Lato", sans-serif;
-	font-size: 1.15em;
+	font-size: 1em;
 	font-weight: 300;
+	line-height:1.5;
 	padding:1.25em 0 1em 0;
 	text-align:justify;
 }
