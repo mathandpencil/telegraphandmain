@@ -78,6 +78,7 @@ a:hover {
 }
 
 .main-content p {
+	font-size:0.8em;
 	line-height:2;
 	margin:0 0 2em 0;
 }
